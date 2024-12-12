@@ -1,0 +1,219 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+body{height: 100vh;
+  font-family: "Epilogue";
+  background-color: hsl(0, 0%, 98%);}
+a, li{
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  font-family: "Epilogue";
+  
+}
+
+header{display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px ;}
+
+.nav{display: flex;}
+
+
+
+
+.container{word-spacing: 40px;}
+.nav_ul li{display: inline-block;
+  padding: 0 20px;
+  
+  
+}
+p{color: hsl(0, 0%, 41%);
+  padding-top: 50px;
+  width: 340px;
+  padding-bottom: 40px;
+}
+
+
+
+.nav a{text-decoration: none;
+color: hsl(0, 0%, 41%);
+font-weight:  500px;}
+.logos{display: flex;
+  padding-top: 50px;
+  gap: 50px;
+
+}
+.logos img{width:70px;
+height: 20px;
+margin-top: 50px;}
+h1{font-size: 80px;
+line-height: 60px;
+padding-top: 100px;
+}
+
+.container a{color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  
+}
+ .container_register{
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 8px 13px;
+  border-radius: 10px;
+  font-weight:  500px;
+  
+}
+
+.section{display: flex;
+align-content: center;
+justify-content: center;}
+.container_section{
+display: grid;
+grid-template-columns: 40rem  ;
+
+grid-template-areas: 
+"container_section image_hero";
+width: 80%;
+
+
+}
+
+.image_hero img{height: 550px;
+transform: translateX(100px);}
+
+.logos{
+  transform: translateY(25px);
+}
+
+.logos img{width: 80px;
+height: 20px;}
+
+.text a{color:white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 15px 15px;
+}
+.section p{font-weight: bold;}
+.learn_more{font-weight: 500;}
+
+
+.drop{
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content{display: none;
+position: absolute;
+align-content: center;
+top: 100%;
+right: 10%;
+box-shadow: 2px 2px 5px rgba(0.4, 0.4, 0.4, 0.4);
+
+
+border-radius: 10px;
+width: 150px;
+height: 140px;
+
+}
+.dropdown-contentx{
+  display: none;
+  position: absolute;
+  align-content: center;
+  
+  
+  top: 100%;
+  left: 10%;
+  box-shadow: 2px 2px 5px rgba(0.4, 0.4, 0.4, 0.4);
+  border-radius: 10px;
+  width: 120px;
+  height: 100px;
+  
+}
+
+
+.dropdown-contentx a{display: grid;
+  grid-template-columns: 1rem;
+  grid-template-rows: 1.5rem;
+padding-left: 25px;
+  
+
+font-size: 15px;
+text-wrap: nowrap;
+
+
+  
+}
+
+.drop:hover .dropdown-contentx{
+  display: block;
+  background-color: white;
+}
+.dropdown-content a{display: grid;
+  grid-template-columns: 1.5rem 4rem;
+  
+  font-size: 15px;
+  justify-content: center;
+  line-height: 1.7rem;
+
+}
+.dropdown-content img{padding-right: 10px;}
+
+
+.drop:hover .dropdown-content{display: block;
+background-color: white;
+  }
+
+
+ .container_register:hover, .company:hover, .features:hover, .careers:hover, .about:hover,.features:hover, .login:hover{color: black;}
+
+
+
+
+
